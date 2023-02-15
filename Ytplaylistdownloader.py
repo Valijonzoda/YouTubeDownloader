@@ -73,12 +73,7 @@ def refresh_field():
     percent.set(str(""))
     text1.set(str(""))
 
-#image background
-#img = Image.open('YouTubePlaylistToMP3/wampiss.png')
-#resize and display
-#img = img.resize((600, 400))
-#img = ImageTk.PhotoImage(img)
-#canvas.create_image(300, 200, image=img)
+
 
 #Header
 header1 = Label(screen, text="YouTube Playlist Downloader", font=('Arial, 20'))
