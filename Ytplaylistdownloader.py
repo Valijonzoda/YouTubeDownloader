@@ -59,7 +59,7 @@ def mp3_download_start():
     threading.Thread(target=download_filemp3).start()
 
 screen = Tk()
-title = screen.title('Youtube Playlist MP3/MP4 Downloader')
+title = screen.title('Youtube Playlist Downloader by Firdavs')
 img = PhotoImage(file='appicon.ico')
 screen.iconphoto(False, img)
 canvas = Canvas(screen, width=600, height=400)
@@ -82,7 +82,7 @@ def refresh_field():
 
 #Header
 header1 = Label(screen, text="YouTube Playlist Downloader", font=('Arial, 20'))
-header2 = Label(screen, text="by:TroyUrtiz", font=('Arial, 6'))
+header2 = Label(screen, text="by:Firdavs", font=('Arial, 12'))
 
 #defining percent and text labels
 link = StringVar()
@@ -90,13 +90,13 @@ percent = StringVar()
 text1 = StringVar()
 
 #Playlist link field
-link_label = Label(screen, text="Enter Playlist Download Link: ", font=('Arial, 8'))
+link_label = Label(screen, text="Ссылка на плейлист или видео: ", font=('Arial, 6'))
 link_field = Entry(screen, width=50)
 refresh_icon = PhotoImage(file="refresh.png")
 refresh_input = Button(screen, image=refresh_icon, command=refresh_field)
 
 #Select Path
-path_label = Label(screen, text="Select Path To Save Download", font=('Arial, 8'))
+path_label = Label(screen, text="Путь сохранения", font=('Arial, 8'))
 select_btn = Button(screen, text="Browse", command=select_path)
 
 #Progress Bar
